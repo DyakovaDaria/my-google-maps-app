@@ -9,7 +9,7 @@ import Geocode from "react-geocode";
 
 const containerStyle = {
   width: "100%",
-  height: "400px",
+  height: "100vh",
 };
 
 const center = {
@@ -83,7 +83,11 @@ export default () => {
               onLoad={onLoadAutocomplete}
               onPlaceChanged={onPlaceChanged}
             >
-              <input type="text" placeholder="Enter a location" />
+              <input
+                type="text"
+                placeholder="Enter a location"
+                style={{ marginLeft: "250px", marginTop: "11px" }}
+              />
             </Autocomplete>
           </div>
         </GoogleMap>
